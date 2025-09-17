@@ -1,0 +1,136 @@
+
+.InfoBox {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cardContainer {
+  perspective: 1000px;
+}
+
+
+.InfoBox .MuiCard-root {
+  max-width: 400px;
+  min-width: 350px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.InfoBox .MuiCard-root:hover {
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.InfoBox .MuiCardMedia-root {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.InfoBox .MuiCardMedia-root::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.InfoBox .MuiCardContent-root {
+  padding: 25px !important;
+  background: rgba(255, 255, 255, 0.98);
+}
+
+
+.InfoBox .MuiTypography-h5 {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: #2d3436;
+  text-align: center;
+  margin-bottom: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.InfoBox .MuiTypography-h5 svg {
+  font-size: 2rem;
+  color: #74b9ff;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  animation: float 3s ease-in-out infinite;
+}
+
+
+.InfoBox .MuiTypography-body2 p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #636e72;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  background: rgba(116, 185, 255, 0.05);
+  border-radius: 10px;
+  border-left: 3px solid #74b9ff;
+  transition: all 0.2s ease;
+}
+
+.InfoBox .MuiTypography-body2 p:hover {
+  background: rgba(116, 185, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.InfoBox .MuiTypography-body2 p:last-child {
+  background: rgba(0, 184, 148, 0.1);
+  border-left-color: #00b894;
+  font-style: italic;
+  text-align: center;
+  justify-content: center;
+}
+
+.InfoBox .MuiTypography-body2 i b {
+  color: #00b894;
+  text-transform: capitalize;
+}
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+
+@media (max-width: 768px) {
+  .InfoBox .MuiCard-root {
+    min-width: 300px;
+    max-width: 350px;
+  }
+  
+  .InfoBox .MuiTypography-h5 {
+    font-size: 1.5rem !important;
+  }
+  
+  .InfoBox .MuiTypography-body2 p {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .InfoBox .MuiCard-root {
+    min-width: 280px;
+    max-width: 320px;
+  }
+  
+  .InfoBox .MuiCardContent-root {
+    padding: 20px !important;
+  }
+}
