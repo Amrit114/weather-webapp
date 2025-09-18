@@ -2,7 +2,7 @@
 # 🌤️ Weather App
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/Amrit114/weather-webapp/main/mini-project-react/public/vite.svg" alt="Weather App Logo" width="120" />
+	<img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Weather App Logo" width="120" />
 </p>
 
 <div align="center">
