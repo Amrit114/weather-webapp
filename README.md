@@ -160,7 +160,7 @@ MIT License
 
 <div align="center">
 
-**Built with ❤️ and ☕ by [Your Name]**
+**Built with ❤️ and ☕ by Amrit Raj Singh**
 
 ⭐ Star this repo if you found it helpful! ⭐
 
